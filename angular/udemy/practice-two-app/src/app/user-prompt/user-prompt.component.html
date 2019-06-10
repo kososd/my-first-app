@@ -1,0 +1,11 @@
+<p>
+  user-prompt works!
+  <input type="text" class="form-control" 
+  (input) = "onUsernameChange($event)"
+  [(ngModel)] = username>
+</p>
+<p>{{username}}</p>
+<button [disabled]="clearEnabled" 
+        class="btn btn-primary" 
+        (click)= "onclick()"
+        style="background: aqua" >Clear</button>
